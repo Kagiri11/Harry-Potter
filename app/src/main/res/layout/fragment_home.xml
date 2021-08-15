@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.HomeFragment">
 
+    <!--region Students-->
     <TextView
         android:id="@+id/tv_students"
         android:layout_width="wrap_content"
@@ -14,7 +15,7 @@
         android:layout_marginTop="80dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Students"
-        android:textSize="20sp"
+        android:textSize="23sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,12 +26,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:orientation="horizontal"
+        tools:listitem="@layout/item_character"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
+    <!--endregion-->
+    <!--region Staff-->
+    <TextView
+        android:id="@+id/tv_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Staff"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_students" />
 
-
-
-
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_staff"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tv_staff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_character"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <!--endregion-->
 </androidx.constraintlayout.widget.ConstraintLayout>
