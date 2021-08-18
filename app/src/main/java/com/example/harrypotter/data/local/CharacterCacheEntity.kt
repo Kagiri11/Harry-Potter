@@ -1,8 +1,10 @@
-package com.example.harrypotter.data.remote
+package com.example.harrypotter.data.local
 
+import androidx.room.Entity
 import com.example.harrypotter.models.Wand
 
-data class StudentNetworkEntity(
+@Entity(tableName = "characters")
+data class CharacterCacheEntity(
     val actor: String,
     val alive: Boolean,
     val ancestry: String,

@@ -1,7 +1,9 @@
 package com.example.harrypotter.models
 
-
-data class StudentsItem(
+/**
+ * Please consider this as the central domain model for students...Doesn't change..
+ */
+data class Character(
     val actor: String,
     val alive: Boolean,
     val ancestry: String,

@@ -1,6 +1,10 @@
-package com.example.harrypotter.models
+package com.example.harrypotter.data.remote
 
-data class StaffItem(
+import com.example.harrypotter.models.Wand
+
+data class CharacterNetworkEntity(
+    //The person who created the API named these fields pretty well so we dont
+    //have to use the @Serialized notation
     val actor: String,
     val alive: Boolean,
     val ancestry: String,
