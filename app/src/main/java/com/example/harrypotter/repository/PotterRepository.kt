@@ -10,8 +10,8 @@ import javax.inject.Inject
 
 class PotterRepository
 @Inject constructor(
-    val dbDao: CharacterCacheDao,
-    val networkService: PotterService
+    private val dbDao: CharacterCacheDao,
+    private val networkService: PotterService
 ) {
     suspend fun fetchCharacters(): List<CharacterNetworkEntity> {
         return networkService.getStudents()
@@ -20,4 +20,6 @@ class PotterRepository
         return dbDao.getSavedCharacters()
     }
     suspend fun addFavouriteCharacter(character:CharacterCacheEntity)=dbDao.insertCharacter(character)
+
+    suspend fun deleteCharacter(character:CharacterCacheEntity)=dbDao.deleteCharacter(character)
 }
