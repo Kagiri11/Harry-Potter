@@ -1,7 +1,11 @@
 package com.example.harrypotter.di
 
+import com.example.harrypotter.data.remote.CharacterNetworkEntity
+import com.example.harrypotter.data.remote.NetworkDataMapper
 import com.example.harrypotter.data.remote.PotterService
+import com.example.harrypotter.models.Character
 import com.example.harrypotter.utils.Constants.BASE_URL
+import com.example.harrypotter.utils.DataMappers
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -16,6 +20,12 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object RetrofitModule {
+
+    @Singleton
+    @Provides
+    fun giveMeANetworkDataMapper():DataMappers<CharacterNetworkEntity,Character>{
+        return NetworkDataMapper()
+    }
 
     @Singleton
     @Provides
