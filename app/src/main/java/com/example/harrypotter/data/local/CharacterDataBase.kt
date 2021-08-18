@@ -12,5 +12,4 @@ abstract class CharacterDataBase :RoomDatabase(){
         val DB_NAME = "characters_db"
     }
 
-
 }
