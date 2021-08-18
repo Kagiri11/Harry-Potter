@@ -1,7 +1,8 @@
-package com.example.harrypotter.models
+package com.example.harrypotter.data.remote
 
+import com.example.harrypotter.models.Wand
 
-data class StudentsItem(
+data class StudentNetworkEntity(
     val actor: String,
     val alive: Boolean,
     val ancestry: String,

@@ -1,6 +1,7 @@
 package com.example.harrypotter.di
 
 import com.example.harrypotter.data.remote.PotterService
+import com.example.harrypotter.utils.Constants.BASE_URL
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
@@ -26,12 +27,15 @@ object RetrofitModule {
     @Provides
     fun giveMeRetrofit(gson:Gson):Retrofit.Builder{
         return Retrofit.Builder()
-            .baseUrl("http://hp-api.herokuapp.com/api/")
+            .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(gson))
     }
 
+    @Singleton
+    @Provides
     fun giveMeNetworkService(retrofit: Retrofit.Builder):PotterService{
         return retrofit.build()
             .create(PotterService::class.java)
     }
+
 }
