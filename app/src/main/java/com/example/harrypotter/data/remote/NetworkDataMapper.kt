@@ -20,8 +20,7 @@ class NetworkDataMapper : DataMappers<CharacterNetworkEntity, Character> {
             name = entity.name,
             patronus = entity.patronus,
             species = entity.species,
-            wand = entity.wand,
-            yearOfBirth = entity.yearOfBirth
+            yearOfBirth = entity.yearOfBirth,
         )
     }
 
@@ -41,7 +40,6 @@ class NetworkDataMapper : DataMappers<CharacterNetworkEntity, Character> {
             name = model.name,
             patronus = model.patronus,
             species = model.species,
-            wand = model.wand,
             yearOfBirth = model.yearOfBirth
         )
     }

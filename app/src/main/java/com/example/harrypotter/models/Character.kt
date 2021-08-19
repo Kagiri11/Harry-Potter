@@ -1,7 +1,7 @@
 package com.example.harrypotter.models
 
 /**
- * Please consider this as the central domain model for students...Doesn't change..
+ * Please consider this as the central domain model for characters...Doesn't change..
  */
 data class Character(
     val actor: String,
@@ -18,6 +18,5 @@ data class Character(
     val name: String,
     val patronus: String,
     val species: String,
-    val wand: Wand,
     val yearOfBirth: String
 )

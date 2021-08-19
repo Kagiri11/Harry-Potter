@@ -6,7 +6,7 @@ import com.example.harrypotter.data.local.CacheDataMapper
 import com.example.harrypotter.data.local.CharacterCacheEntity
 import com.example.harrypotter.data.remote.CharacterNetworkEntity
 import com.example.harrypotter.data.remote.NetworkDataMapper
-import com.example.harrypotter.repository.PotterRepository
+import com.example.harrypotter.data.repository.PotterRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 

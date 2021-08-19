@@ -1,6 +1,5 @@
 package com.example.harrypotter.data.remote
 
-import com.example.harrypotter.models.Wand
 
 data class CharacterNetworkEntity(
     //The person who created the API named these fields pretty well so we dont
@@ -19,6 +18,5 @@ data class CharacterNetworkEntity(
     val name: String,
     val patronus: String,
     val species: String,
-    val wand: Wand,
     val yearOfBirth: String
 )

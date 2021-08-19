@@ -1,11 +1,10 @@
-package com.example.harrypotter.repository
+package com.example.harrypotter.data.repository
 
 
 import com.example.harrypotter.data.local.CharacterCacheDao
 import com.example.harrypotter.data.local.CharacterCacheEntity
 import com.example.harrypotter.data.remote.CharacterNetworkEntity
 import com.example.harrypotter.data.remote.PotterService
-import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 class PotterRepository

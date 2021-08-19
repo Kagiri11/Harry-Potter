@@ -21,8 +21,7 @@ class CacheDataMapper : DataMappers<CharacterCacheEntity,Character> {
             name = entity.name,
             patronus = entity.patronus,
             species = entity.species,
-            wand = entity.wand,
-            yearOfBirth = entity.yearOfBirth
+            yearOfBirth = entity.yearOfBirth,
         )
     }
 
@@ -42,8 +41,7 @@ class CacheDataMapper : DataMappers<CharacterCacheEntity,Character> {
             name = model.name,
             patronus = model.patronus,
             species = model.species,
-            wand = model.wand,
-            yearOfBirth = model.yearOfBirth
+            yearOfBirth = model.yearOfBirth,
         )
     }
 
