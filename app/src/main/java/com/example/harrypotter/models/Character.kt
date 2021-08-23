@@ -1,5 +1,7 @@
 package com.example.harrypotter.models
 
+import java.io.Serializable
+
 /**
  * Please consider this as the central domain model for characters...Doesn't change..
  */
@@ -19,4 +21,4 @@ data class Character(
     val patronus: String,
     val species: String,
     val yearOfBirth: String
-)
+):Serializable
