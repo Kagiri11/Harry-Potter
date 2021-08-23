@@ -27,5 +27,9 @@
     <fragment
         android:id="@+id/characterFragment"
         android:name="com.example.harrypotter.ui.fragments.CharacterFragment"
-        android:label="CharacterFragment" />
+        android:label="CharacterFragment" >
+        <argument
+            android:name="character"
+            app:argType="com.example.harrypotter.models.Character" />
+    </fragment>
 </navigation>
