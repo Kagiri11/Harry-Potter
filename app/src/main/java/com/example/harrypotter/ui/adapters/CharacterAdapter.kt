@@ -27,7 +27,11 @@ class CharacterAdapter(val characters: List<CharacterNetworkEntity>) :
         holder.binding.apply {
             tvCharacterName.text = character.name
             Glide.with(this.root).load(character.image).into(ivCharacterImage)
+            ivCharacterImage.setOnClickListener {
+
+            }
         }
+
     }
 
     override fun getItemCount(): Int = characters.size
