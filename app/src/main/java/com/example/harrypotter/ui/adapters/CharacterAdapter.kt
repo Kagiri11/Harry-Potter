@@ -6,10 +6,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.harrypotter.R
+import com.example.harrypotter.data.remote.CharacterNetworkEntity
 import com.example.harrypotter.databinding.ItemCharacterBinding
 import com.example.harrypotter.models.Character
 
-class CharacterAdapter(val characters: List<Character>) :
+class CharacterAdapter(val characters: List<CharacterNetworkEntity>) :
     RecyclerView.Adapter<CharacterAdapter.CharacterViewHolder>() {
     class CharacterViewHolder(val binding: ItemCharacterBinding) :
         RecyclerView.ViewHolder(binding.root)

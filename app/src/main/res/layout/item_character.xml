@@ -18,7 +18,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:cardCornerRadius="75dp"
+            app:cardCornerRadius="65dp"
             android:backgroundTint="@color/purple_200">
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -36,6 +36,7 @@
             android:layout_height="wrap_content"
             android:text="Harry Potter"
             android:textSize="20sp"
+            android:gravity="center"
             android:fontFamily="@font/poppins"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

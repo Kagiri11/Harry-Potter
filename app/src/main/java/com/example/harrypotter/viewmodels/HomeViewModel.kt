@@ -12,8 +12,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel
-@Inject constructor(
-   private val repo: PotterRepository
+@Inject constructor(val repo: PotterRepository
 ): ViewModel() {
 
     val dbCharacters = liveData{
