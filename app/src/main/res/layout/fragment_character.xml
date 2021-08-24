@@ -111,6 +111,7 @@
                 android:id="@+id/character_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:scaleType="fitXY"
                 android:src="@drawable/ic_launcher_background" />
         </androidx.cardview.widget.CardView>
 
